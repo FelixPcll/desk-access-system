@@ -1,0 +1,19 @@
+{
+  "name": "electron_app",
+  "version": "1.0.0",
+  "description": "testing the electron and photon stuffs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Felix Porcelli",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "3.0.2"
+  },
+  "dependencies": {
+    "electron-photon": "^1.1.6",
+    "jquery": "^3.3.1"
+  }
+}

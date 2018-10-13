@@ -1,0 +1,127 @@
+.win-btn {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.container-main {
+    position: relative;
+    width: 550px;
+    margin: auto;
+    height: 100%
+    
+}
+
+
+
+/* ------------------HOME------------------ */
+#home{
+    text-align: center;
+}
+
+#titulo-home {
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+#titulo-home h1 {
+    font-size: 2.3em;
+    line-break: auto
+}
+
+#logo-home{
+    width: 100%
+}
+
+#container-contato {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding-bottom: 30px
+}
+#container-contato h1{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#container-info-contato {
+    
+    width: 100%;
+}
+
+.forma-contato {
+    width: 33%;
+    float: right;
+}
+
+
+
+
+/* ------------------USERS------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ADD------------------ */
+
+.pad {
+    margin-bottom: 6px;
+    /*box-sizing: border-box;*/
+}
+
+.pad-top {
+    margin-top: 50px;
+}
+
+
+#photo-waiter {
+    width: 40%;
+    height: auto;
+
+}
+
+
+
+
+.container-sub{
+    padding-bottom: 20px;
+}
+
+
+
+/* ------------------STAT------------------ */
+
+#stats {
+    top: 0px;
+    width: 700px;
+    background-color: rgb(211, 43, 43);
+    margin: auto;
+}
+
+#titulo-stats {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

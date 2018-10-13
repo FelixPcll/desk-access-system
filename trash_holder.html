@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./photon/dist/css/photon.css">
+
+    <script>window.$ = window.JQuery = require('jquery');</script>
+
+    <script src="controller.js"></script>
+
+    <script>document.addEventListener("keydown", function (e) {
+            if (e.which === 123) {
+                require('remote').getCurrentWindow().toggleDevTools();
+            } else if (e.which === 116) {
+                location.reload();
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="window">
+
+        <!-- .toolbar-header sits at the top of your app -->
+        <header class="toolbar toolbar-header">
+            <h1 class="title">Controle de Acesso</h1>
+
+            <div class="toolbar-actions">
+                <div id="menu-group" class="btn-group">
+                    <button class="btn btn-large btn-default">
+                        <span class="icon icon-home"></span>
+                    </button>
+
+                    <button class="btn btn-large btn-default active">
+                        <span class="icon icon-users"></span>
+                    </button>
+
+                    <button class="btn btn-large btn-default">
+                        <span class="icon icon-user-add"></span>
+                    </button>
+
+                    <button class="btn btn-large btn-default">
+                        <span class="icon icon-chart-line"></span>
+                    </button>
+                </div>
+
+                <div class="title btn-group pull-right pull-top">
+                    <!--
+                    <button class="btn btn-default btn-dropdown pull-right">
+                        <span class="icon icon-phone"></span>
+                    </button>
+                    -->
+
+                    <button id="btn-minimize" class="btn btn-mini">
+                        <span class="icon icon-minus"></span>
+                    </button>
+
+                    <button id="btn-resize_full" class="btn btn-mini">
+                        <span class="icon icon-resize-full"></span>
+                    </button>
+
+                    <button id="btn-close" class="btn btn-mini">
+                        <span class="icon icon-cancel"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Your app's content goes inside .window-content -->
+
+        <div class="window-content">
+            <div class="pane-group">
+
+
+                <div class="pane pane-sm sidebar">
+
+                    <ul class="list-group">
+                        <li class="list-group-header">
+                            <input id="filter_user" class="form-control" type="text" placeholder="Procure pelo nome...">
+                        </li>
+                    </ul>
+
+                    <ul id="contact_list" class="list-group">
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Carlos</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar2.png" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Monica</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar3.jpg" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Pedro</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar4.jpg" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Julio</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar5.png" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Eduardo</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar6.jpg" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Katia</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar.jpg" width="32" height="32">
+                            <div class="media-body">
+                                <strong>Carlos</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar2.png" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Monica</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar3.jpg" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Pedro</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar4.jpg" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Julio</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar5.png" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Eduardo</strong>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img class="img-circle media-object pull-left" src="img/users/avatar6.jpg" width="32"
+                                height="32">
+                            <div class="media-body">
+                                <strong>Katia</strong>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="pane">
+                    ...
+                </div>
+
+
+                <div class="pane pane-sm sidebar">
+                    <h3>
+                        <center><strong>Acesso à Catraca</strong></center>
+                    </h3>
+
+                    <center><img class="img-rounded" src="img/catraca/acesso.svg" width="70%" height="auto"></center>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- On the botton of your app -->
+        <footer class="toolbar toolbar-footer">
+            <h1 class="title"><span class="icon icon-left-open"></span> <span class="icon icon-right-open"></span> Com
+                <span class="icon icon-heart-empty"></span> por Physis Jr.</h1>
+        </footer>
+    </div>
+</body>
+
+
+
+</html>
