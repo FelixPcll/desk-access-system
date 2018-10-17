@@ -99,14 +99,20 @@
 /* ------------------STAT------------------ */
 
 #stats {
-    top: 0px;
     width: 700px;
-    background-color: rgb(211, 43, 43);
-    margin: auto;
+    background-color: rgba(247, 99, 247, 0);
 }
 
 #titulo-stats {
     text-align: center;
+    padding: 15px;
+}
+#titulo-stats h1 {
+    margin: 0px
+}
+
+#myChart {
+    width: 50%;
 }
 
 

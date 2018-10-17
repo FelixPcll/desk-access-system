@@ -13,6 +13,7 @@
     "electron": "3.0.2"
   },
   "dependencies": {
+    "chart.js": "^2.7.3",
     "electron-photon": "^1.1.6",
     "jquery": "^3.3.1"
   }
