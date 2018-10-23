@@ -34,7 +34,8 @@ $(document).ready(function () {
                 ],
                 backgroundColor: 'rgb(75, 77, 180)',
                 borderColor: 'rgb(125, 127, 255)',
-                fill: false
+                fill: false,
+                showLine: true
             },
             {
                 label: 'Mulheres',
@@ -50,7 +51,7 @@ $(document).ready(function () {
                 borderColor: 'rgb(255, 155, 255)',
                 fill: false,
                 pointRadius: 5,
-                showLine: false
+                showLine: true
             }]
         },
         options: {
