@@ -10,7 +10,8 @@
   "author": "Felix Porcelli",
   "license": "ISC",
   "devDependencies": {
-    "electron": "3.0.2"
+    "electron": "3.0.2",
+    "electron-packager": "^12.2.0"
   },
   "dependencies": {
     "chart.js": "^2.7.3",
